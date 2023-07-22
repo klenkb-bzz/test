@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Comic Sans MS", sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+h3, .text {
+    margin-bottom: 5mm;
+}
+
+form, .text {
+    display: flex;
+    flex-direction: column;
+    width: 120mm;
+    gap: 5mm;
+}
+
+input, select, textarea {
+    padding: 7.5mm;
+    background: transparent;
+    border: 1px solid black;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+textarea {
+    height: 30mm;
+}
