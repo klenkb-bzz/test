@@ -1,35 +1,98 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 0;
-    border: 0;
-}
-
-body {
-    height: 100vh;
     font-family: "Comic Sans MS", sans-serif;
-    display: grid;
-    place-items: center;
 }
 
-h3, .text {
-    margin-bottom: 5mm;
+/* styles.css */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-form, .text {
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 60px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Style for the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    padding: 0;
+    margin-left: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+/* Show the dropdown when hovering over the parent */
+li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li:hover {
+    background-color: darkgray;
+}
+
+.dropdown-header {
+    background-color: gray;
+}
+
+.dropdown-header{
+    display: block;
+}
+
+
+
+
+
+
+.menu {
+    background-color: gray;
+    padding: 10px 20px;
+    font-size: 20px;
     display: flex;
-    flex-direction: column;
-    width: 120mm;
-    gap: 5mm;
+    justify-content: center;
 }
 
-input, select, textarea {
-    padding: 7.5mm;
-    background: transparent;
-    border: 1px solid black;
-    font-family: "Comic Sans MS", sans-serif;
+.menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-textarea {
-    height: 30mm;
+.menu nav ul li {
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.menu nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu nav ul li:hover {
+    text-decoration: underline;
+}
+
+.menu-active {
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.menu {
+    display: none;
 }
