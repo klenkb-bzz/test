@@ -36,6 +36,10 @@ nav ul li a {
     display: block;
 }
 
+.dropdown-content li a{
+    padding: 10px 40px;
+}
+
 /* Show the dropdown when hovering over the parent */
 li.dropdown:hover .dropdown-content {
     display: block;
