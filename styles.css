@@ -6,8 +6,8 @@
 
 .menu {
     background-color: gray;
-    padding: 70px 20px;
-    font-size: 50px;
+    padding: 35px 2px 20px 20px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }
@@ -20,7 +20,7 @@
 
 .menu nav ul li {
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 10px;
 }
 
 .menu nav ul li a {
@@ -38,6 +38,44 @@
     text-decoration: underline;
     color: white;
     font-style: italic;
-;
 }
+
+.wrapper {
+    width: 100%;
+}
+
+.form-info {
+    width: 100%;
+}
+
+.form-img {
+    background-image: url("./kontakt.jpg");
+    background-size: 100%;
+
+}
+
+
+
+.form-info h3 {
+    height: 28vh;
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 98px;
+    transform: rotate(-4deg);
+    font-size: 25px;
+    color: white;
+}
+
+.form-info p {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+    margin: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
 
