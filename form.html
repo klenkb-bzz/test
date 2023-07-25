@@ -35,43 +35,44 @@
         <option value="Herr">
         <option value="Frau">
       </datalist>
-
-
+      
       <input type="text" required name="customer-firstname" id="customer-firstname" placeholder="*Vorname">
       <input type="text" required name="customer-lastname" id="customer-lastname" placeholder="*Nachname"> <br>
 
-      <input type="email" required name="customer-email" id="customer-email" placeholder="*Email">
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder=" Mobilnummer"> <br>
+      <div class="block-email">
+        <input type="email" required name="customer-email" id="customer-email" placeholder="*Email">
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder=" Mobilnummer"> <br>
 
-      <input type="text" name="customer-address" id="customer-address" placeholder=" Strasse & Hausnummer">
-      <input type="search" list="zip-codes" id="zip" name="zip" placeholder=" Postleitzahl"> <br>
-      <datalist id="zip-codes">
-        <option value="8064, ZH">
-        <option value="8049, ZH">
-        <option value="8046, ZH">
-        <option value="8052, ZH">
-        <option value="8050, ZH">
-        <option value="8057, ZH">
-        <option value="8051, ZH">
-        <option value="8037, ZH">
-        <option value="8005, ZH">
-        <option value="8006, ZH">
-        <option value="8048, ZH">
-        <option value="8044, ZH">
-        <option value="8047, ZH">
-        <option value="8063, ZH">
-        <option value="8055, ZH">
-        <option value="8004, ZH">
-        <option value="8003, ZH">
-        <option value="8001, ZH">
-        <option value="8032, ZH">
-        <option value="8045, ZH">
-        <option value="8041, ZH">
-        <option value="8002, ZH">
-        <option value="8053, ZH">
-        <option value="8008, ZH">
-        <option value="8038, ZH">
-      </datalist>
+        <input type="text" name="customer-address" id="customer-address" placeholder=" Strasse & Hausnummer">
+        <select id="zip" name="zip" size="1">
+          <option disabled selected >Postleitzahl...</option>
+          <option value="8064, ZH">8064, ZH</option>
+          <option value="8049, ZH">8049, ZH</option>
+          <option value="8046, ZH">8046, ZH</option>
+          <option value="8052, ZH">8052, ZH</option>
+          <option value="8050, ZH">8050, ZH</option>
+          <option value="8057, ZH">8057, ZH</option>
+          <option value="8051, ZH">8051, ZH</option>
+          <option value="8037, ZH">8037, ZH</option>
+          <option value="8005, ZH">8005, ZH</option>
+          <option value="8006, ZH">8006, ZH</option>
+          <option value="8048, ZH">8048, ZH</option>
+          <option value="8044, ZH">8044, ZH</option>
+          <option value="8047, ZH">8047, ZH</option>
+          <option value="8063, ZH">8063, ZH</option>
+          <option value="8055, ZH">8055, ZH</option>
+          <option value="8004, ZH">8004, ZH</option>
+          <option value="8003, ZH">8003, ZH</option>
+          <option value="8001, ZH">8001, ZH</option>
+          <option value="8032, ZH">8032, ZH</option>
+          <option value="8045, ZH">8045, ZH</option>
+          <option value="8041, ZH">8041, ZH</option>
+          <option value="8002, ZH">8002, ZH</option>
+          <option value="8053, ZH">8053, ZH</option>
+          <option value="8008, ZH">8008, ZH</option>
+          <option value="8038, ZH">8038, ZH</option>
+        </select>
+      </div>
 
       <label for="service">Angebote:</label><br>
       <select name="service" id="service" required size="1">
@@ -82,7 +83,7 @@
         <option value="other">Anderes</option>
         <option value="question">Fragen</option>
       </select>
-
+      <br>
 
       <div class="radio-group">
         <input type="radio" id="saturday" name="weekend-day" value="Saturday" required>
@@ -98,8 +99,12 @@
       <div class="button">
         <button type="submit">Absenden</button>
       </div>
-    </fieldset>
+      </fieldset>
   </form>
+</div>
+
+<div class="space">
+
 </div>
 
 <footer>
