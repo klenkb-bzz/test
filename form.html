@@ -25,26 +25,26 @@
       <h3>Kontakt</h3>
     </div>
     <p class="text">
-      Haben Sie Fragen oder bereits eine Entscheidung getroffen? Dann sind Sie hier richtig.</p>
+      Haben Sie Fragen oder bereits einen Auftrag für mich? Dann sind Sie hier richtig.</p>
   </article>
   <form action="" method="post">
     <fieldset>
       <label for="form-of-address">Kundeninformationen:</label> <br>
-      <input name="form-of-address" id="form-of-address" list="addresses" placeholder="Anrede" required> <br>
+      <input name="form-of-address" id="form-of-address" list="addresses" placeholder="*Anrede" required> <br>
       <datalist id="addresses">
         <option value="Herr">
         <option value="Frau">
       </datalist>
 
 
-      <input type="text" required name="customer-firstname" id="customer-firstname" placeholder="Vorname">
-      <input type="text" required name="customer-lastname" id="customer-lastname" placeholder="Nachname"> <br>
+      <input type="text" required name="customer-firstname" id="customer-firstname" placeholder="*Vorname">
+      <input type="text" required name="customer-lastname" id="customer-lastname" placeholder="*Nachname"> <br>
 
-      <input type="email" required name="customer-email" id="customer-email" placeholder="Email">
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Mobilnummer"> <br>
+      <input type="email" required name="customer-email" id="customer-email" placeholder="*Email">
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder=" Mobilnummer"> <br>
 
-      <input type="text" name="customer-address" id="customer-address" placeholder="Strasse & Hausnummer">
-      <input type="search" list="zip-codes" id="zip" name="zip" placeholder="Postleitzahl"> <br>
+      <input type="text" name="customer-address" id="customer-address" placeholder=" Strasse & Hausnummer">
+      <input type="search" list="zip-codes" id="zip" name="zip" placeholder=" Postleitzahl"> <br>
       <datalist id="zip-codes">
         <option value="8064, ZH">
         <option value="8049, ZH">
@@ -84,22 +84,30 @@
       </select>
 
 
-      <input type="radio" id="saturday" name="weekend-day" value="Saturday" required>
-      <label for="saturday">Samstag</label>
-      <input type="radio" id="sunday" name="weekend-day" value="Sunday" required>
-      <label for="sunday">Sonntag</label>
+      <div class="radio-group">
+        <input type="radio" id="saturday" name="weekend-day" value="Saturday" required>
+        <label for="saturday" class="radio-label">Samstag</label>
+        <input type="radio" id="sunday" name="weekend-day" value="Sunday" required>
+        <label for="sunday" class="radio-label">Sonntag</label>
+      </div>
       <br>
 
       <textarea name="description" id="description" required placeholder="Beschreiben Sie Ihren Auftrag, gewünschtes Datum und Zeit..."></textarea>
       <br>
 
-      <button type="submit">Absenden</button>
-      <button type="reset">Zurücksetzen</button>
+      <div class="button">
+        <button type="submit">Absenden</button>
+      </div>
     </fieldset>
   </form>
 </div>
 
-<footer></footer>
+<footer>
+  <div class="footer">
+    <a href="./impressum.html">Impressum</a>
+    <a href="./disclaimer.html">Haftungsausschluss</a>
+  </div>
+</footer>
 
 </body>
 </html>
